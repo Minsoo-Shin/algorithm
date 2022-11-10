@@ -52,11 +52,6 @@ func New() *List {
 	return &List{Head: nil, Tail: nil}
 }
 
-// 제일 처음 노드( 리스트의 head)
-func (l *List) First() *ListNode {
-	return l.Head
-}
-
 func (l *List) AddNode(val int) *List {
 	node := &ListNode{Val: val, Next: nil}
 	if l.Head == nil {
@@ -66,4 +61,25 @@ func (l *List) AddNode(val int) *List {
 	}
 	l.Tail = node
 	return l
+}
+
+func mergeTwoLists2(list1 *ListNode, list2 *ListNode) *ListNode {
+	if list1 == nil && list2 == nil {
+		return nil
+	}
+
+	if list1 == nil {
+		return list2
+	}
+
+	if list2 == nil {
+		return list1
+	}
+
+	if list1.Val < list2.Val {
+		list1.Next = mergeTwoLists2(list1.Next, list2)
+		return list1
+	}
+	list2.Next = mergeTwoLists2(list1, list2.Next)
+	return list2
 }
