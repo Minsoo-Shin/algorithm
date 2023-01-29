@@ -22,5 +22,11 @@ func TestMaximumSubarray(t *testing.T) {
 	for _, tt := range tests {
 		got := maxSubArray(tt.nums)
 		assert.Equal(t, tt.exp, got)
+
+		got = maxSubArrayN2(tt.nums)
+		assert.Equal(t, tt.exp, got)
+
+		got = maxSubArrayN1(tt.nums)
+		assert.Equal(t, tt.exp, got)
 	}
 }

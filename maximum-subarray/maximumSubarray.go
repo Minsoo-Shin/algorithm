@@ -22,3 +22,33 @@ func maxSubArray(nums []int) int {
 	}
 	return int(maxSum)
 }
+
+func maxSubArrayN2(nums []int) int {
+	maxSum := -math.MaxFloat64
+	len := len(nums)
+
+	for i := 0; i < len; i++ {
+		sum := 0
+		for j := i; j < len; j++ {
+			sum += nums[j]
+			maxSum = math.Max(maxSum, float64(sum))
+		}
+	}
+	return int(maxSum)
+}
+
+func maxSubArrayN1(nums []int) int {
+	maxSum, maxSumEnding := nums[0], nums[0]
+	len := len(nums)
+
+	for i := 1; i < len; i++ {
+		if maxSumEnding < 0 {
+			maxSumEnding = nums[i]
+		} else {
+			maxSumEnding += nums[i]
+		}
+
+		maxSum = int(math.Max(float64(maxSum), float64(maxSumEnding)))
+	}
+	return maxSum
+}
