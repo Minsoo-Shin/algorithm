@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 )
 
 /*
@@ -94,10 +93,7 @@ n3 = ()()() / (())() / ()(()) / ((())) => 2*n2
 */
 
 func solution(s string) {
-	arr := []rune{'()'}
-	for i := 0; i < len(s); i++ {
-		strings.ContainsRune()
-	}
+
 }
 
 func solution(s string) int {
