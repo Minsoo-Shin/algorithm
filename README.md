@@ -9,3 +9,4 @@
 | #  | Problem                                                                | Difficulty | Solutions | Topics                 |
 |----|------------------------------------------------------------------------|------------|-----------|------------------------|
 | 56 | [Merge Intervals](./kotlin/src/leetcode/_56_merge_intervals/README.md) | Medium     | 1         | Array, Sorting, Greedy |
+| -  | [Longest Unique Substring Set](./kotlin/src/leetcode/_xx_unique_substring_set/README.md) | Medium | 1 | String, Greedy |
