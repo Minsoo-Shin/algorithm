@@ -1,7 +1,7 @@
 # 56. Merge Intervals 
 
 --- 
-[← Back to Main](../../../README.md)
+[← Back to Main](../../../../README.md)
 
 ## Problem
 주어진 구간들을 병합하여 겹치지 않는 구간들의 배열을 반환합니다.
