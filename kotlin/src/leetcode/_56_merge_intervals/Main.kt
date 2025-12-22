@@ -1,6 +1,7 @@
 // Main.kt
 package leetcode._56_merge_intervals
 
+import common.TestCase
 import kotlin.reflect.KClass
 
 fun main() {
