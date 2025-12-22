@@ -1,4 +1,7 @@
-# 56. Merge Intervals
+# 56. Merge Intervals 
+
+--- 
+[← Back to Main](../../../README.md)
 
 ## Problem
 주어진 구간들을 병합하여 겹치지 않는 구간들의 배열을 반환합니다.
@@ -7,7 +10,7 @@
 
 ## Approach
 
-### 1. Greedy (Solution.kt)
+### 1. Greedy
 - 시작점 기준 정렬 후 순차적으로 병합
 - Time: O(n log n), Space: O(n)
 
