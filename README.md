@@ -6,7 +6,9 @@
 
 ### LeetCode
 
-| #  | Problem                                                                | Difficulty | Solutions | Topics                 |
-|----|------------------------------------------------------------------------|------------|-----------|------------------------|
-| 56 | [Merge Intervals](./kotlin/src/leetcode/_56_merge_intervals/README.md) | Medium     | 1         | Array, Sorting, Greedy |
-| -  | [Longest Unique Substring Set](./kotlin/src/leetcode/_xx_unique_substring_set/README.md) | Medium | 1 | String, Greedy |
+| #   | Problem                                                                                     | Difficulty | Solutions | Topics                    |
+|-----|---------------------------------------------------------------------------------------------|------------|-----------|---------------------------|
+| 56  | [Merge Intervals](./kotlin/src/leetcode/_56_merge_intervals/README.md)                      | Medium     | 1         | Array, Sorting, Greedy    |
+| 100 | [Same Tree](./kotlin/src/leetcode/_100_same_tree/README.md)                                 | Easy       | 1         | Tree, DFS, BFS            |
+| 876 | [Middle of the Linked List](./kotlin/src/leetcode/_876_middle_of_the_linked_list/README.md) | Easy       | 1         | Linked List, Two Pointers |
+| -   | [Longest Unique Substring Set](./kotlin/src/leetcode/_xx_unique_substring_set/README.md)    | Medium     | 1         | String, Greedy            |
