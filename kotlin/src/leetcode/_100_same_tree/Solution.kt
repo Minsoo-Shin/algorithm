@@ -7,14 +7,8 @@ class Solution{
     }
 
     fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean {
-        val pVal = p?.`val`
-        val qVal = q?.`val`
-        if (pVal != qVal) {
-            return false
-        }
-        if (pVal == null && qVal == null) {
-            return true
-        }
-        return isSameTree(p!!.left,  q!!.left) && isSameTree(p!!.right, q!!.right)
+        if (p == null && q == null) return true
+        if (p == null || q == null || q.`val` != p.`val`) return false
+        return isSameTree(p.left,  q.left) && isSameTree(p.right, q.right)
     }
 }
