@@ -15,13 +15,7 @@ class Trie() {
         var currentNode = root
 
         for (char in word) {
-            currentNode.children[char]?.let {
-                currentNode = it
-            } ?: run {
-                val newNode = TrieNode()
-                currentNode.children[char] = newNode
-                currentNode = newNode
-            }
+            currentNode = currentNode.children.getOrPut(char) { TrieNode() }
         }
 
         currentNode.isEndOfWord = true
